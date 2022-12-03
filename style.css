@@ -1,0 +1,86 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	display: flex;
+	margin: 0;
+	width: 100vw;
+	height: 100vh;
+	background: url("media/body-background.png");
+	background-size: 100% 100%;
+	color: #fff;
+}
+
+.logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50vw;
+	height: 100vh;
+}
+
+.logo > img {
+	width: 70%;
+}
+
+.formulario {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50vw;
+	height: 100vh;
+}
+
+fieldset {
+	border: 2px solid #fff;
+	border-radius: 15px;
+}
+
+fieldset > legend {
+	border: 2px solid #fff;
+	border-radius: 15px;
+	padding: 5%;
+	font-size: 1.3em;
+	font-weight: 800;
+}
+
+.inputBox {
+	position: relative;
+	margin: 15% 7%;
+}
+
+.inputUser {
+	border: none;
+	border-bottom: 1px solid #fff;
+	width: 100%;
+	outline: none;
+	background: none;
+	color: #fff;
+	font-size: 1em;
+	letter-spacing: .5px;
+}
+
+.inputLabel {
+	font-weight: 800;
+	top: 0;
+	position: absolute;
+	transition: .5s;
+	pointer-events: none;
+}
+
+.inputUser:focus ~ .inputLabel,
+.inputUser:valid ~ .inputLabel {
+	top: -80%;
+	font-size: .8em;
+}
+
+.sendButton {
+	background: none;
+	color: #fff;
+	width: 100%;
+	margin-bottom: 1%;
+	font-size: 1.2em;
+	font-weight: 800;
+	border: 1px solid #fff;
+	padding: 2%;
+	border-radius: 10px;
+	cursor: pointer;
+}
